@@ -1,5 +1,5 @@
-import { SQSEvent } from "../types/event";
-import { processRecord } from "./processor";
+import { SQSEvent } from "./types/event";
+import { processRecord } from "./services/processor";
 
 export const handler = async (event: SQSEvent) => {
   for (const record of event.Records) {

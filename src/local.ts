@@ -1,4 +1,4 @@
-import { handler } from "./services/handler";
+import { handler } from "./handler";
 import * as fs from "fs";
 
 const event = JSON.parse(fs.readFileSync("event.json", "utf-8"));
